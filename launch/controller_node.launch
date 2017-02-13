@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="simulator"/>
+    <!--<node pkg="ros_course" type="controller_node.py" name="controller_node"/> --> <!--For Python node-->
+    <node pkg="ros_course" type="controller_node_cpp" name="controller_node"/> <!--For Cpp node-->
+    <node pkg="rostopic" type="rostopic" name="pose_echo_node" args="echo /turtle1/pose -c" output="screen"/>
+</launch>
