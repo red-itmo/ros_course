@@ -9,6 +9,8 @@
     <buildtool_depend>catkin</buildtool_depend>
     <build_depend>rospy</build_depend>
     <run_depend>rospy</run_depend>
+    <build_depend>angles</build_depend>
+    <run_depend>angles</run_depend>
     <build_depend>roscpp</build_depend>
     <run_depend>roscpp</run_depend>
     <build_depend>geometry_msgs</build_depend>
