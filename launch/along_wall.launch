@@ -1,0 +1,9 @@
+<launch>
+
+    <node pkg="ros_course" name="along_wall_node" type="along_wall.py">
+        <param name="forward_velocity" value="1.0"/>
+        <param name="controller_coefficient" value="2.5"/>
+        <param name="needed_distance" value="1.5"/>
+    </node>
+
+</launch>

@@ -6,6 +6,7 @@ find_package(catkin REQUIRED
     rospy
     angles
     geometry_msgs
+    sensor_msgs
     turtlesim
 )
 
@@ -22,5 +23,11 @@ target_link_libraries(controller_node_cpp
 add_executable(controller_node_cpp_shorter src/controller_node_shorter.cpp)
 
 target_link_libraries(controller_node_cpp_shorter
+    ${catkin_LIBRARIES}
+)
+
+add_executable(along_wall src/along_wall.cpp)
+
+target_link_libraries(along_wall
     ${catkin_LIBRARIES}
 )
